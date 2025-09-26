@@ -1,0 +1,62 @@
+.suggestion-chip {
+  align-items: center;
+  background-color: #f7f2fa;
+  border-radius: 8px;
+  display: inline-flex;
+  height: 32px;
+  justify-content: center;
+  left: 165px;
+  overflow: hidden;
+  position: relative;
+
+  .state-layer {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    height: 32px;
+    justify-content: center;
+    padding: 6px 16px;
+    position: relative;
+
+    &:hover {
+      background-color: #49454f14;
+    }
+  }
+
+  .label-text {
+    align-items: center;
+    color: #49454f;
+    display: flex;
+    font-family: var(--m3-label-large-font-family);
+    font-size: var(--m3-label-large-font-size);
+    font-style: var(--m3-label-large-font-style);
+    font-weight: var(--m3-label-large-font-weight);
+    justify-content: center;
+    letter-spacing: var(--m3-label-large-letter-spacing);
+    line-height: var(--m3-label-large-line-height);
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+
+  &.pressed-true {
+    box-shadow: var(--m3-elevation-light-2);
+    top: 187px;
+
+    .state-layer {
+      background-color: #49454f1a;
+    }
+  }
+
+  &.pressed-false {
+    top: 19px;
+  }
+
+  &:hover {
+    left: 164px;
+    top: 75px;
+  }
+}
